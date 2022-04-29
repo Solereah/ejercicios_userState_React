@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import P from './components/P';
+import { Collapse } from './components/Collapse';
+import {Form} from './components/Form';
+import {BackgroundColorSwitcher} from './components/BackgroundColorSwitcher';
+import { CurrencyConverter } from './components/CurrencyConverter';
+import {SearchList} from './components/SearchList';
 
-function App() {
+
+const App=()=> {
+ const items=["Python"," Java"," JavaScript", "Net", "PHP", "Ruby", "R"," TypeScript", "Swift", "Objective-C"] 
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        {/*<P></P>
+        <Collapse label= "Desplegar menu">
+          <ul>
+            <li>lalala</li>
+            <li>pepe</li>
+            <li>lololo</li>
+          </ul>
+          </Collapse>
+          <Form></Form>
+          <BackgroundColorSwitcher/>
+          <CurrencyConverter/>*/}
+          <SearchList items={items}/>
+
     </div>
   );
 }
