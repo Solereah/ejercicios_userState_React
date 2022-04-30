@@ -5,6 +5,9 @@ import {Form} from './components/Form';
 import {BackgroundColorSwitcher} from './components/BackgroundColorSwitcher';
 import { CurrencyConverter } from './components/CurrencyConverter';
 import {SearchList} from './components/SearchList';
+import { EditableText } from './components/EditableText';
+
+
 
 
 const App=()=> {
@@ -22,8 +25,12 @@ const App=()=> {
           </Collapse>
           <Form></Form>
           <BackgroundColorSwitcher/>
-          <CurrencyConverter/>*/}
           <SearchList items={items}/>
+          <CurrencyConverter moneda1='pesos' moneda2='dolares' tasaConversion={200} />
+          <CurrencyConverter moneda1='pesos' moneda2='euros' tasaConversion={220} />
+         */}
+         
+     <EditableText defaultValue={"Hola  mundo"}/>
 
     </div>
   );
